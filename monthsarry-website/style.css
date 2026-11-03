@@ -1,0 +1,171 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, serif;
+    background: linear-gradient(
+        135deg,
+        #ffd1dc,
+        #ffe4ec,
+        #d1b6ff
+    );
+    min-height: 100vh;
+    text-align: center;
+    padding: 30px 15px;
+    overflow-x: hidden;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.85);
+    max-width: 650px;
+    margin: auto;
+    padding: 35px 25px;
+    border-radius: 25px;
+    box-shadow: 0 10px 30px rgba(255, 80, 130, 0.2);
+    position: relative;
+    z-index: 2;
+}
+
+.top-hearts {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #e75480;
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+.subtitle {
+    color: #a8325c;
+    font-size: 19px;
+    margin-bottom: 25px;
+}
+
+.picture img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px blue;
+}
+
+h2 {
+    color: #d6336c;
+    margin: 20px 0 12px;
+}
+
+.date {
+    color: #777;
+    margin-bottom: 20px;
+}
+
+button {
+    background: #ff69a6;
+    color: white;
+    border: none;
+    padding: 14px 25px;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #e75480;
+    transform: scale(1.05);
+}
+
+.letter {
+    display: none;
+    background: #fff0f5;
+    padding: 25px;
+    margin-top: 25px;
+    border-radius: 20px;
+    color: #923653;
+    line-height: 1.8;
+    animation: fadeIn 1s;
+}
+
+.letter h3 {
+    margin-bottom: 15px;
+    color: #e75480;
+}
+
+.love {
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.footer {
+    color: #a8325c;
+    line-height: 1.8;
+    margin-top: 15px;
+}
+
+.heart {
+    position: fixed;
+    bottom: -30px;
+    animation: floatUp 6s linear infinite;
+    pointer-events: none;
+    z-index: 1;
+}
+
+@keyframes floatUp {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-110vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 500px) {
+    h1 {
+        font-size: 29px;
+    }
+
+    .container {
+        padding: 25px 15px;
+    }
+
+    .picture img {
+        height: 250px;
+    }
+button {
+    background: pink;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin: 5px;
+}
+button {
+    background: pink;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin: 5px;
+}
+}
